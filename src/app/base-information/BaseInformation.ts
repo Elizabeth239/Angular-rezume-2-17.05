@@ -6,4 +6,5 @@ email: string='';
 city: string='';
 telephone: string[]=[" "];
 birthDate: string='';
+procentOfSuccess:number=1.0;
 }

@@ -18,7 +18,8 @@ items = ITEMS;
 	email:"youremail@.gmail.com",
 	telephone:["123456789"],
 	city:"City",
-	birthDate:"111"
+	birthDate:"111",
+	procentOfSuccess:90
 	};
 
   constructor() { }

@@ -10,8 +10,12 @@
 <ul class="information">
 <li [style.fontSize]="'24px'" [style.color]="'blue'" *ngFor="let item of items">{{item.surname | uppercase}} {{item.name | uppercase}} {{item.patronomic | uppercase}} {{item.email | lowercase}} <!-- {{item.telephone}} --> {{item.city}} {{item.birthDate | date}}<p *ngIf="item.telephone.length > 0">
  {{item.telephone.length == 1 ? item.telephone :
-item.telephone}}
-</p></li>
+item.telephone}} 
+</p>
+<p *ngIf="item.procentOfSuccess > 0.8"> {{item.procentOfSuccess | percent}} {{item.procentOfSuccess > 0.8 ? 'rate of success' :
+item.procentOfSuccess}}
+</p>
+</li>
 </ul>
 
 
